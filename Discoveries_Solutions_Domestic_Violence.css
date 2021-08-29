@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin:0;  
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin:0;
+    /* position: relative; */
+    font-family: Arial, Helvetica, sans-serif;
+    font: size 17px;
+    color:#050505;
+    line-height: 1.6;
+    background-color: rgb(240, 240, 240);
+    -webkit-font-smoothing: antialiased;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden;   */
+
+}
+
+.half_screen {
+    background-image: url('../images/86.png');
+    height: 100vh;
+    width: 50vw;
+    margin-top: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+
+}
+
+
+.half_screen p{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.half_screen h1{
+    font-size: 60px;
+    margin-top: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.half_screen a{
+    text-decoration: none;
+    font-size: 17px;
+    padding: 4px;
+    color: black;
+    background-color:white;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.half_screen #texty a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+   
+   
+}
+
+.half_screen #texty{
+    margin-left:1300px;
+    font-size: 30px;
+    margin-top: 250px;
+    position: absolute;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    line-height: 2.0;
+
+}
+
+
+.half_screen #texty h1{
+   text-align: center;
+   color: rgb(163, 155, 155);
+}
+
+#texty {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+
+}
+
+
+#second_section {
+    background-color:white;
+   
+}
+
+#letter_U {
+
+}
+
+#second_section #letter_U h1 {
+    font-size: 40px;
+    background-color:white;
+    padding: 40px;
+  
+}
+
+#second_section #letter_U h2 {
+    font-size: 60px;
+    background-color:white;
+    padding-left:180px;
+
+
+}
+
+#second_section #letter_U h3 {
+    font-size: 30px;
+    background-color:white;
+    padding-left:210px;
+
+    
+}
+
+#second_section #letter_U h4 {
+    color: rgb(255, 255, 255);
+    margin-left: 500px;
+    /* width: 100vw; */
+    background-color:#ffffff;
+    font-size: 17px;
+    line-height: 3em;
+    background-image: url('../images/sad_GBV.jpg');
+    background-repeat: no-repeat;
+    padding: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+
+#second_section #letter_U h4 p {
+    font-size: 23px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+#sect {
+    margin-bottom: 5px;
+}
+
+
+.discovery {
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.solution {
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+

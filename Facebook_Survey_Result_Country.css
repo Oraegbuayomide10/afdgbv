@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Roboto:wght@100&display=swap');
+
+
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	font-family: 'Poppins', sans-serif;
+    background-image: url('../images/sad_GBV.jpg');
+    overflow: hidden;
+
+
+   
+
+
+}
+
+
+/* ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}  */
+
+
+.sections {
+    color: rgb(0, 0, 0);
+
+  
+   
+}
+
+.sections #survey p {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+
+}
+
+ .sections #survey h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    /* margin-left: 300px; */
+
+
+
+} 
+
+.sections {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border-radius: 400px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+
+}
+
+.sections .tableauPlaceholder {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 240px; 
+    
+}
+
+
+.section_2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left:1000px;
+    top: 0;
+}
+
+.section_2 p {
+    font-size: 15px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    margin-top: 100px;
+    color: white;
+    padding: 20px;
+    line-height: 4em;
+
+
+
+}
+
+
+.section_2 h2 {
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    font-family: 'Kaushan Script', cursive; 
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 350px;
+    margin-left: 100px;
+}
+
+
+.feature-icon {
+    margin-top: 20px;
+}
+
+.feature-icon .fa{
+    width: 40px;
+    height: 40px;
+}
+
+.fa {
+    margin-top: 20px;
+    margin-left: -50px;
+    color:rgb(185, 153, 153);
+    border: 3px solid rgb(231, 182, 182);
+    line-height: 50px;
+    border-radius: 8px;
+
+
+}
+
+
+#next_page {
+    text-align: center;
+    padding: 20px;
+    margin-left: 1200px;
+  
+}
+
+#next_page #button {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border: rgb(211, 181, 181) 2px solid;
+    padding:10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    animation-name: button_animate;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+
+#next_page #button:hover{
+    transform: rotate(360deg);
+}
+
+
+@keyframes button_animate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+#next_page #button:hover{
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+
+
+#prev_page {
+    text-align: center;
+    padding: 20px;
+    margin-left: 500px;
+  
+}
+
+#prev_page #button {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border: rgb(211, 181, 181) 2px solid;
+    padding:10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    animation-name: button_animate;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+
+#prev_page #button:hover{
+    transform: rotate(360deg);
+}
+
+
+@keyframes button_animate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+#prev_page #button:hover{
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+

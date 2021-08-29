@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(165, 136, 136);
+
+    
+}
+
+#just_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/female_press_phone.jpeg');
+    width: 25%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .overlay {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(82, 187, 223, 0), #f7a499);
+    opacity: 0;
+    transition: 1s;
+       
+} */
+
+#world_saying {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), #e25846); */
+     border-top-right-radius: 40px; 
+    border-bottom-left-radius: 60px; 
+    margin-right: 0%; 
+} 
+
+ #world_saying h2 {
+    position: absolute;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    /* -webkit-text-stroke: 0.1vw #575050; */
+    text-transform: uppercase;
+    line-height: 2em;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: 'Kaushan Script', 'cursive';
+} 
+
+ /* #world_saying h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0; 
+    color: #ffffff;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #ffffff;
+    overflow: hidden; 
+    animation: animate 6s linear infinite;
+    height: 50vh;
+    width: 20%;
+
+} */
+
+@keyframes animate {
+    0%, 10%, 100%{
+        width: 0;
+
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}  
+
+
+#word_cloud {
+    position: relative;
+    width: 75%;
+    /* margin-top: 25.4%; */
+    background: #ffffff;
+    background-image: url('../images/sad_GBV.jpg');
+    /* background-position: center; */
+    /* background-repeat: repeat; */
+    /* background-size: cover; */
+
+}
+
+.word_cloud_text {
+    display: flex;
+   
+    
+
+}
+
+.word_cloud_text p {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    line-height: 3.0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 300px;
+    font-family: 'Kaushan Script', 'cursive';
+   
+    /* background-color: white; */
+    /* font-weight: bold; */
+}
+
+.slider {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    /* overflow: hidden; */
+    height:700px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+   
+
+}
+
+
+.tableauPlaceholder {
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 500px;
+    border-top-right-radius: 500px;
+
+}
+
+
+.slide.current {
+    opacity: 1;
+}
+
+
+ /* -450px */
+.slide .content {
+    position: absolute;
+    bottom: 0px;
+    left: -925px;
+    opacity: 0;
+    width: 475px;
+    background-color: #ffffff;
+    color: #000000;
+    /* padding: 2px; */
+
+    background: linear-gradient(rgba(236, 231, 231, 0), #7a3c3c);
+}
+
+
+
+.slide .content h1 {
+    margin-bottom: 10px;
+    color: rgb(190, 190, 190);
+    /* background-color: rgb(255, 255, 255); */
+    
+
+}
+
+.slide .content p {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    /* font-weight: bold; */
+    line-height: 2;
+ 
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(450px);
+    transition: all 0.7s ease-in-out 0.7s;
+
+}
+
+.buttons button#next {
+    position: relative;
+    top: -400px;
+    right: -1100px;
+    font-size: 15px;
+ 
+  }
+  
+  .buttons button#prev {
+    position: relative;
+    top: -400px;
+    right: -1050px;
+    font-size: 15px;
+    
+  }
+  
+  .buttons button {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius:10px;
+    outline: none;
+    font-size: 10px;
+    box-shadow: 5px 5px grey;
+ 
+    
+  }
+
+  
+  .buttons button:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(68, 68, 68);
+    box-shadow: none;
+    
+  
+  }
+  
+  @media (max-width: 500px) {
+    .slide .content {
+      bottom: -300px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+  }
+  
+
+
+/* Background Images*/
+/* .slide:first-child {
+    background: url('../images/GBV_Prevention_Net_New.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(2) {
+    background: url('../images/GBV_Prevention_Net_New-Mentions.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('../images/KENYA_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+    background: url('../images/KENYA_New_Mention.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(5) {
+    background: url('../images/TANZANIA_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+    background: url('../images/TANZANIA_New_Mentions.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(7) {
+    background: url('../images/UNICEF_Cloud_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(8) {
+    background: url('../images/UNICEF_Cloud_New_Mentions.jpg') no-repeat center top/cover;
+}
+
+
+.slide:nth-child(9) {
+    background: url('../images/World_Most_Tweeted_Gender_Based_Violence_2_New.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(10) {
+    background: url('../images/AltworOrgs_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(11) {
+    background: url('../images/AltworOrgs_New_Mentions.jpg') no-repeat center top/cover;
+} */
+
+
+.content a {
+    text-decoration: none;
+    color: white;
+}

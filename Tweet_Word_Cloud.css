@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #080a22; 
+    
+}
+
+#just_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: url('../images/female_press_phone.jpeg');
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* .overlay {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(82, 187, 223, 0), #f7a499);
+    opacity: 0;
+    transition: 1s;
+       
+}
+
+#just_image:hover .overlay {
+    opacity: 1;
+}
+
+
+/* 0752a6 */
+
+#world_saying {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    width: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), #e25846); */
+    border-top-right-radius: 40px; 
+    border-bottom-left-radius: 60px; 
+    margin-right: 0%;
+}
+
+#world_saying h2 {
+    position: relative;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+        /* width: 30%; */
+    -webkit-text-stroke: 0.1vw #000000;
+    text-transform: uppercase;
+    
+}
+
+#world_saying h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: #ffffff;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #ffffff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+
+@keyframes animate {
+    0%, 10%, 100%{
+        width: 0;
+
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+/* Word Cloud */
+
+#word_cloud {
+    position: absolute;
+    margin-top: 25.4%;
+    background: #ebecee;
+    background-image: url('../images/Twitter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.word_cloud_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 255, 255, 0.5);
+    border-bottom-left-radius: 50px; */
+    border-bottom-right-radius: 50px;
+
+}
+
+.word_cloud_text p {
+    font-size: 45px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(82, 187, 223);
+    -webkit-font-smoothing: antialiased;
+    line-height: 3.0;
+    /* background-color: white; */
+    /* font-weight: bold; */
+}
+
+.slider {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    /* overflow: hidden; */
+    height:700px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+   
+
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+
+ /* -450px */
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -900px;
+    opacity: 0;
+    width: 445px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2px;
+    margin-bottom:50px;
+    background: linear-gradient(rgba(82, 187, 223, 0), #f7a499);
+}
+
+
+
+.slide .content h1 {
+    margin-bottom: 10px;
+    color: rgb(82, 187, 223);
+    
+
+}
+
+.slide .content p {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 15px;
+    /* font-weight: bold; */
+    line-height: 2;
+ 
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(450px);
+    transition: all 0.7s ease-in-out 0.7s;
+
+}
+
+.buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: -250px;
+    font-size: 20px;
+  }
+  
+  .buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: -250px;
+    font-size: 20px;
+  }
+  
+  .buttons button {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 100px;
+    outline: none;
+    font-size: 10px;
+  }
+  
+  .buttons button:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    
+  
+  }
+  
+  @media (max-width: 500px) {
+    .slide .content {
+      bottom: -300px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+  }
+  
+
+
+/* Background Images*/
+.slide:first-child {
+    background: url('../images/GBV_Prevention_Net_New.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(2) {
+    background: url('../images/GBV_Prevention_Net_New-Mentions.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('../images/KENYA_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+    background: url('../images/KENYA_New_Mention.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(5) {
+    background: url('../images/TANZANIA_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+    background: url('../images/TANZANIA_New_Mentions.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(7) {
+    background: url('../images/UNICEF_Cloud_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(8) {
+    background: url('../images/UNICEF_Cloud_New_Mentions.jpg') no-repeat center top/cover;
+}
+
+
+.slide:nth-child(9) {
+    background: url('../images/World_Most_Tweeted_Gender_Based_Violence_2_New.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(10) {
+    background: url('../images/AltworOrgs_New.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(11) {
+    background: url('../images/AltworOrgs_New_Mentions.jpg') no-repeat center top/cover;
+}
+
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*width 532
+/* height 643 */

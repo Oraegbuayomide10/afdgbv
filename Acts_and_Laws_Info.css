@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font: size 17px;
+    background-image: url('../images/16_.jpg');
+    color:#ffffff;
+    line-height: 1.6;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 50s infinite;
+
+    overflow: hidden;  
+   
+  
+}
+
+
+
+
+@keyframes slide {
+  0% {
+      background-image: url('../images/16_.jpg'); 
+  }
+  25% {
+      background-image: url('../images/17_.jpg'); 
+  }
+
+  50% {
+      background-image: url('../images/18_.jpg'); 
+  }
+
+  75% {
+      background-image: url('../images/19_.jpg'); 
+  }
+
+  100% {
+      background-image: url('../images/20_.jpg'); 
+  }
+
+
+}
+
+
+nav .drop-btn {
+
+  width: 360px;
+  background: #242526;
+  color: #ffffff;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight:500;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav .drop-btn span {
+  float: right;
+  line-height: 50px;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+ 
+}
+
+
+
+nav {
+  position: absolute;
+  top:0px;
+  /* left: 50%; */
+  transform: translate(-200%, -50%);
+
+ 
+}
+
+nav .wrapper {
+  background: linear-gradient(rgba(243, 241, 241, 0.5), #2c2c2c);
+  position: absolute;
+  top: 140px;
+  display: flex;
+  width: 370px;
+  overflow: hidden;
+  /* background: #f0efef; */
+  border-radius: 2pc;  
+  transition: all 0.5s ease;
+  display: none;
+}
+
+
+nav .wrapper.show {
+  display: block;
+  display: flex;
+
+}
+
+
+nav .wrapper .setting-drop {
+  display: none;
+
+
+}
+
+
+nav .wrapper .help-drop {
+  display: none;  
+  
+}
+
+nav .wrapper .west-drop {
+  display: none;  
+  
+}
+
+nav .wrapper .other-drop {
+  display: none;  
+  
+}
+
+nav .wrapper .east-drop {
+  display: none;  
+  
+}
+
+
+
+
+
+nav .wrapper ul {
+  list-style: none;
+  width: 400px;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+nav .wrapper ul li {
+  line-height: 50px;
+}
+
+
+nav .wrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 0 10px;
+  align-items: center;
+  border-radius:  8px;
+  
+
+  
+}
+
+nav .wrapper ul li:hover a {
+  background: #3A3B3C;
+  
+}
+
+.wrapper ul li a .icon {
+  background: rgb(0, 0, 0);
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top:20px; */
+  border-radius: 20px;
+  
+}
+
+
+.wrapper ul li a .icon_flag img{
+  margin-top:1px;
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  border-radius: 20px;
+ 
+
+}
+
+
+.wrapper ul li a .icon img{
+  background: rgb(255, 255, 255);
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  
+}
+
+.wrapper ul li a i {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+ 
+
+}
+
+
+.wrapper .setting-drop .arrow{
+  padding-left: 20px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  
+}
+
+
+.wrapper .setting-drop .arrow span {
+  margin-right: 15px;
+
+}
+
+
+.wrapper .help-drop .arrow{
+  padding-left: 20px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.wrapper .help-drop .arrow span {
+  margin-right: 15px;
+
+}
+
+
+.wrapper .west-drop .arrow{
+  padding-left: 20px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.wrapper .west-drop .arrow span {
+  margin-right: 15px;
+
+}
+
+
+.wrapper .other-drop .arrow{
+  padding-left: 20px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.wrapper .other-drop .arrow span {
+  margin-right: 15px;
+
+}
+
+.wrapper .east-drop .arrow{
+  padding-left: 20px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.wrapper .east-drop .arrow span {
+  margin-right: 15px;
+
+}
+
+
+
+
+
+
+#Insights_All {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url('../images/Justice.jpg'); */
+    width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    margin-left: 500px;
+    border-top-left-radius:40px;
+
+}
+
+.discover_insight {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 250px;
+
+}
+
+
+ .discover_insight p {
+    font-size: 100px;
+    -webkit-text-stroke: 0.19vh #000000;
+    font-family: 'Kaushan Script', cursive;
+
+  
+  } 
+
+  .discover_insight h1 {
+    font-size: 70px;
+    padding-top: 30px;
+    -webkit-text-stroke: 0.3vh #000000;
+    line-height: 2.1em;
+    color: rgb(255, 255, 255);
+    word-spacing: 10px;
+    /* margin-left:500px; */
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+
+  } 
+
+  .discover_insight h2 {
+    padding-top: 100px;
+    padding-bottom: 30px;
+   
+  } 
+
+  #country  {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding-top: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 5px;
+   
+  }
+
+
+  
+
+
+.select_country {
+    position: absolute;
+    top: 40px;
+    background-color: white;
+    border-radius:50px;
+    
+  }
+
+.select_country p {
+      font-size: 20px;
+      color: black;
+      cursor: pointer;
+      padding: 10px;
+
+  }
+
+.select_country P:hover {
+    color: white;
+    background-color: black;
+}
