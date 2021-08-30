@@ -14,7 +14,7 @@ body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     font: size 17px;
-    background-image: url('../images/16_.jpg');
+    background-image: url('images/16_.jpg');
     color:#ffffff;
     line-height: 1.6;
     padding: 0;
@@ -37,22 +37,22 @@ body{
 
 @keyframes slide {
   0% {
-      background-image: url('../images/16_.jpg'); 
+      background-image: url('images/16_.jpg'); 
   }
   25% {
-      background-image: url('../images/17_.jpg'); 
+      background-image: url('images/17_.jpg'); 
   }
 
   50% {
-      background-image: url('../images/18_.jpg'); 
+      background-image: url('images/18_.jpg'); 
   }
 
   75% {
-      background-image: url('../images/19_.jpg'); 
+      background-image: url('images/19_.jpg'); 
   }
 
   100% {
-      background-image: url('../images/20_.jpg'); 
+      background-image: url('images/20_.jpg'); 
   }
 
 
